@@ -63,7 +63,7 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement subscribe function in Notification controller.`
     -   [x] Commit: `Implement unsubscribe function in Notification service.`
     -   [x] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [x] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -84,5 +84,11 @@ This is the place for you to write reflections:
 3. Dalam Rust, menggunakan DashMap untuk HashMap thread-safe lebih disarankan daripada mengimplementasikan pola Singleton. Karena DashMap sudah menyediakan thread safety yang ada di DashMap itu sendiri, sementara implementasi Singleton membutuhkan lebih banyak implementasi safety dan dapat menambahkan kompleksitas dan kesalahan baru.
 
 #### Reflection Publisher-2
+
+1. Memisahkan "Service" dan "Repository" membantu pemisahan antara data, logika, dan interaksi antara data yang dikerjakan. Sehingga dengan memisahkan "Service" dan "Repository" meningkatkan kejelasan struktur dari program, memudahkan testing, dan kebersihan code untuk mengasilkan program yang lebih baik.
+
+2. Menggunakan hanya Model tanpa memisahkan Service atau Repository dapat meningkatkan kompleksitas kode untuk setiap model. Interaksi antara Program, Subscriber, dan Notification dalam satu Model dapat menyebabkan tanggung jawab antara fungsi menjadi bertumpuk, menambah code program, dan mempersulit pemeliharaan kode.
+
+3. Belum secara menyeluruh, namun tertarik untuk mempelajari Postman lebih lanjut dibanding sebatas menggunakannya untuk testing pada tugas ini.
 
 #### Reflection Publisher-3
