@@ -69,7 +69,7 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement notify function in Notification service to notify each Subscriber.`
     -   [x] Commit: `Implement publish function in Program service and Program controller.`
     -   [x] Commit: `Edit Product service methods to call notify after create/delete.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
+    -   [x] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -92,3 +92,9 @@ This is the place for you to write reflections:
 3. Belum secara menyeluruh, namun tertarik untuk mempelajari Postman lebih lanjut dibanding sebatas menggunakannya untuk testing pada tugas ini.
 
 #### Reflection Publisher-3
+
+1. Observer Pattern yang digunakan adalah Push model karena fungsi dari notification yang membuat publisher "push" data ke subscriber yang ada di SubscirberRepository. 
+
+2. Pull model dari Observer Pattern jika digunakan untuk program ini ada beberapa kelebihan, terutama pada sisi data yang didapatkan oleh Subscriber. Jika digunakannya Pull model, subscriber akan menjadi yang me-request data untuk update. Namun hal tersebut tentu juga dapat menjadi kerugian dimana update notification akan tertunda bahkan dapat menumpuk jika banyak request.
+
+3. Jika tidak digunakannya multi-threading pada proses notification, program akan mengalami perlambatan. Notification akan satu-persatu dikirim ke banyak subscriber dimana akan mengganggu proses inti dari probram yang harus menunggu proses dari notification untuk selesai.
