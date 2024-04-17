@@ -77,6 +77,11 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
+1. Pada kasus BambangShop yang dibuat, menggunakan interface atau `trait` masih berguna. Karena menggunakan interface dapat memberikan kebebasan untuk menjadi fleksibel, dapat dilakukan enkapsulasi, dan memisahkan subject dan subscriber.
+
+2. Menggunakan `DashMap` akan lebih baik untuk digunakan pada kasus BambangShop karen digunakannya suatu key untuk membuat id menjadi unik untuk setiap data strukturnya, dimana `Vec` hanya menyediakan list dari semua elemen dan membutuhkan usaha yang lebih untuk mengiterasinya.
+
+3. Dalam Rust, menggunakan DashMap untuk HashMap thread-safe lebih disarankan daripada mengimplementasikan pola Singleton. Karena DashMap sudah menyediakan thread safety yang ada di DashMap itu sendiri, sementara implementasi Singleton membutuhkan lebih banyak implementasi safety dan dapat menambahkan kompleksitas dan kesalahan baru.
 
 #### Reflection Publisher-2
 
